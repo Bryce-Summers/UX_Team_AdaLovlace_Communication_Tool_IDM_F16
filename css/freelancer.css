@@ -93,7 +93,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
@@ -103,6 +103,16 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+
+.slider
+{
+  cursor:url('./img/hand_0.png'), auto;
+}
+
+.slider:active{
+    cursor: url('./img/hand_1.png');
+}
+
 .navbar-custom {
   background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
