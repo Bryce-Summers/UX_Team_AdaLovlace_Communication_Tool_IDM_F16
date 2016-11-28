@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Team Ada Lovelace</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" >
+        <div class="container"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Team Ada Lovelace</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                    <!-- return false tells the browser to not follow the link. -->
+                        <a href="" onclick="page_prototype();return false;">Prototype</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#" onclick="page_components();return false;">Components</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#" onclick="page_research();return false;">Research</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#" onclick="page_about();return false;">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#" onclick="page_contact();return false;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header style="visibility:hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">Team Ada Loveless</span>
+                        
+                        <span class="skills">UX Project for JPL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- nice Looking Slider GUI images. -->
+    <div class="slider">
+        <button id="button_left"  onclick="page_left()">Page Left</button>
+        <button id="button_right" onclick="page_right()">Page Right</button>
+
+        <a href="#" onclick="slider_click();return false;">
+        <img id="slider_knob" src="img/knob.png" alt="Slider Knob Image" style="cursor:url(./img/hand_1.png), auto;">
+        <img id="slider_low"  src="img/slider_1.png" alt="Slider Unpressed" style="cursor:url(./img/hand_0.png), auto;">
+        <img id="slider_high" src="img/slider_2.png" alt="Slider Pressed" style="cursor:url(./img/hand_1.png), auto;">
+        </a>
+
+    </div>
+
+
+    <!-- Prototype -->
+    <section class="success" id="prototype">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Prototype</h2>
+                    	<img src="img/video.png" class="img-responsive img-centered" alt="">
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <!-- Components -->
+    <section id="components">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Components</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+					<h4>Explosphere</h4>
+                        <img src="img/no-picture.png" class="img-responsive" alt="">
+                        <p>Description of Explosphere here</p>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+					<h4>Navigation Hierarchy</h4>
+                        <img src="img/no-picture.png" class="img-responsive" alt="">
+                        <p>Description of Navigation Hierarchy here</p>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+					<h4>GUI</h4>
+                        <img src="img/no-picture.png" class="img-responsive" alt="">
+                        <p>Description of GUI here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- Research -->
+    <section class="success" id="research">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Research</h2>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact</h2>
+                    <p>Hi Bryce: I don't think I'll keep this section and will combine everyone's contact information with
+                    their picture in the about section</p>
+                    
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+    <!-- Horizontal Layout code by Bryce Summers. -->
+    <script src="js/bryce_horizontal.js"></script>
+
+</body>
+
+</html>

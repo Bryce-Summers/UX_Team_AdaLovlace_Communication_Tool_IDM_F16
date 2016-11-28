@@ -3,6 +3,10 @@
 
 <head>
 
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+	</style>
+	
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +17,19 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
 
-    <!-- Theme CSS -->
+     <!-- Theme CSS -->
+     <link href="css/custom.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
+    
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> --!>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,6 +37,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	
+
 
 </head>
 
@@ -61,10 +73,10 @@
                         <a href="#" onclick="page_research();return false;">Research</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#" onclick="page_about();return false;">About</a>
+                        <a href="#" onclick="page_about();return false;">The Team</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#" onclick="page_contact();return false;">Contact</a>
+                        <a href="#" onclick="page_contact();return false;">About</a>
                     </li>
                 </ul>
             </div>
@@ -90,8 +102,8 @@
 
     <!-- nice Looking Slider GUI images. -->
     <div class="slider">
-        <button id="button_left"  onclick="page_left()">Page Left</button>
-        <button id="button_right" onclick="page_right()">Page Right</button>
+        <button id="button_left"  onclick="page_left()">  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+        <button id="button_right" onclick="page_right()"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
 
         <a href="#" onclick="slider_click();return false;">
         <img id="slider_knob" src="img/knob.png" alt="Slider Knob Image" style="cursor:url(./img/hand_1.png), auto;">
@@ -103,12 +115,12 @@
 
 
     <!-- Prototype -->
-    <section class="success" id="prototype">
+    <section class="success dark" id="prototype">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Prototype</h2>
-                    	<img src="img/video.png" class="img-responsive img-centered" alt="">
+                    	<iframe width="560" height="315" src="https://www.youtube.com/embed/JTLtAycwzrQ" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -124,19 +136,28 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-					<h4>Explosphere</h4>
-                        <img src="img/no-picture.png" class="img-responsive" alt="">
-                        <p>Description of Explosphere here</p>
+                	<div class="col-lg-12 text-center">
+                		<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+						<h3>Explosphere</h3>
+                       	 <img src="img/comp/exo_01.png" class="img-responsive" alt="">
+                        	</a>
+                    </div>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-					<h4>Navigation Hierarchy</h4>
-                        <img src="img/no-picture.png" class="img-responsive" alt="">
-                        <p>Description of Navigation Hierarchy here</p>
+                <div class="col-lg-12 text-center">
+                	<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+					<h3>NavTree</h3>
+                        <img src="img/comp/navtree_01.png" class="img-responsive" alt="">
+                    </a>
+                </div>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-					<h4>GUI</h4>
-                        <img src="img/no-picture.png" class="img-responsive" alt="">
-                        <p>Description of GUI here</p>
+                <div class="col-lg-12 text-center">
+					<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+					<h3>Hierarchy Slider</h3>
+                        <img src="img/comp/hie_01.gif" class="img-responsive" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -148,32 +169,67 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Research</h2>
+                    <p>The primary research inspiration was based on the beautiful design of the Google Tilt Brush and the Japan Airlines HoloLens Experience. As our prototype evolved, the team researched other navigation opportunities in 3D Modeling software such as Maya and SolidWorks. Consequently, one of functionalities, the “NavTree,” resembles the SolidWorks tree map navigation. As for our second option, the team went beyond software and discovered the interconnectivity of the Lego toys to be a true inspiration for the “explosion mode” of ExploSphere.
+					</p>
+                    <div class="row">
+ 	 					<div class="col-md-6">
+							<img src="img/jplgif3.gif" class="img-responsive img-centered" alt="">
+ 	 					</div>
+  						<div class="col-md-6">
+  							<img src="img/paintbrush.png" class="img-responsive img-centered" alt="">
+  						</div>
+					</div>
+                    
                 </div>
             </div>
             
         </div>
     </section>
     
-    <!-- About Section -->
+    <!-- The Team Section -->
     <section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                </div>
-            </div>
-           
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact</h2>
-                    <p>Hi Bryce: I don't think I'll keep this section and will combine everyone's contact information with
-                    their picture in the about section</p>
+                    <h2>The Team</h2>
+                    
+                    <div class="center-me">
+                    <div class="row">
+ 					 	<div class="col-md-4">
+ 					 		<h4>Albert Pulido</h4>
+ 					 		<img src="img/team/albert.png" class="img-responsive img-centered" alt="">
+ 					 		<p>albertdpulido@gmail.com</p>
+ 					 	</div>
+  						<div class="col-md-4">
+  							<h4>Tatiana Pilon</h4>
+  							<img src="img/team/tati.png" class="img-responsive img-centered" alt="">
+  							<p>tatiana.pilon@nyu.edu</p>
+  						</div>
+  						<div class="col-md-4">
+  							<h4>Bryce Summers</h4>
+  							<img src="img/team/bryce.png" class="img-responsive img-centered" alt="">
+  							<p>bs3363@nyu.edu</p>
+  						</div>
+					</div>
+					 <div class="row">
+ 					 	<div class="col-md-4">
+  							<h4>Melody Loveless</h4>
+  							<img src="img/team/melody.png" class="img-responsive img-centered" alt="">
+  							<p>melodyloveless@gmail.com </p>
+ 					 	</div>
+  						<div class="col-md-4">
+  							<h4>Abhinav Jha</h4>
+  							<img src="img/team/abhi.png" class="img-responsive img-centered" alt="">
+  							<p>abhinav.jha@nyu.edu</p>
+  						</div>
+  						<div class="col-md-4">
+  							<h4>Alexa Shea</h4>
+  							<img src="img/team/alexa.png" class="img-responsive img-centered" alt="">
+  							<p>alexa.shea@nyu.edu</p>
+  						</div>
+					</div>
+					</div>
+                    
                     
                 </div>
             </div>
@@ -181,46 +237,148 @@
         </div>
     </section>
 
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Under Construction</h3>
-                        <p>Something about NYU the project and stuff here??</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Under Construction</h3>
-                        <p></p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Under Construction</h3>
-                       
+    <!-- About Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <div class="center-me">
+                     <div class="row">
+ 					 	<div class="col-md-6">
+					<img src="img/demo.jpg" class="img-responsive img-centered" alt="">
+						</div>
+						<div class="col-md-6">
+						<p>This project was made in conjunction with the 
+							NASA JPL Ops Lab and
+							the User Experience Course at NYU Tandon School of Engineering</p>
+						<img src="img/nyu.png" class="img-responsive img-centered" alt="">
+						<div class="row">
+ 					 		<div class="col-md-6">
+							<img src="img/nasalogo.png" class="img-responsive img-centered" alt="">
+							</div>
+							<div class="col-md-6">
+							<img src="img/ops.png" class="img-responsive img-centered" alt="">
+							</div>
+						</div>
+						
+ 					 	</div>
+ 					 </div>
+ 					 </div>
                     </div>
                 </div>
             </div>
+           
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Team Ada Lovelace 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </section>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
     </div>
     
+    
+    
+    
+    <!-- Components Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ExploSphere</h2>
+  <div class="row">
+ 					 			<div class="col-md-4">
+  									<img src="img/comp/exo_01.png" class="img-responsive img-centered" alt="">
+ 					 			</div>
+  								<div class="col-md-4">
+  									<img src="img/comp/exo_02.png" class="img-responsive img-centered" alt="">
+  								</div>
+  								<div class="col-md-4">
+  									<img src="img/comp/exo_03.png" class="img-responsive img-centered" alt="">
+  								</div>
+							</div>
+
+								<p>The ExploSphere is a new augment, whose main purpose is to provide an exploded view of a user-selected object. The exploded object, exploded one hierarchy level down, appears within a translucent sphere that distinguishes it from the parts of the full rover model. The ExploSphere can be dragged to different locations around the user, and can be toggled on and off. Objects in this view can also be selected and pinned.
+                            </p>
+                    
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>NavTree</h2>
+                             <div class="row">
+ 					 			<div class="col-md-4">
+  									<img src="img/comp/navtree_01.png" class="img-responsive img-centered" alt="">
+ 					 			</div>
+  								<div class="col-md-4">
+  									<img src="img/comp/navtree_02.png" class="img-responsive img-centered" alt="">
+  								</div>
+  								<div class="col-md-4">
+  									<img src="img/comp/navtree_03.png" class="img-responsive img-centered" alt="">
+  								</div>
+							</div>
+                            
+                            
+                            
+							<p>
+							The NavTree is a new augment, whose main purpose is to provide a hierarchical database model view of a user-selected object. The NavTree features a 2D single-level parent view of the selected object, and displays three levels up the hierarchy tree for that object. Gazing at the child-object level enlarges four child objects at a time with the remaining objects represented as squares. Within each enlarged child object is an image of the object, and below the NavTree is a box displaying the full name of the object that is begin gazed at. The NavTree can be dragged to different locations around the user, and can be toggled on and off. Objects in this view can also be selected and pinned.
+							</p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Hierarchy Slider</h2>
+								<img src="img/comp/hie_02.gif" class="img-responsive img-centered" alt="">
+							<p>
+							Our Hierarchy Slider is a new augment that allows users to slide between levels of hierarchy.
+							</p>
+
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 

@@ -56,7 +56,7 @@ function horizontalize_sections()
 	
 	var x = -screen_x;
 	var x_step = w;
-	var button_h = 64;
+	var button_h = 30;
 
 	var sections = document.querySelectorAll("section");
 	var max_height = 0;
